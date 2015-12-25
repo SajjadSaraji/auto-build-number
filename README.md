@@ -3,9 +3,15 @@ Generate Auto Build Number for your Android Application And Append to your Versi
 
 How to use!
 1. Create a file in your application root directory with name : version.properties
+
 2. Add VERSION_BUILD = 0 to file and save it ( you can add your costume number if you build it before)
+
 3. Now You just Code some groovy scripts:
+
+
 3.1. open gradle.build application file and append codes : 
+
+
 
     def versionPropsFile = file('version.properties')
 
@@ -35,7 +41,12 @@ How to use!
 }
 
 NOTE**** Open Brucket with defaultConfig { } is depend on your Project, delete it,
+
+
 4. Re-Sync Application Gradle files
+
 5. with each build application, auto-increament script increases your build number
+
 6. you can parse your build number on application ( codes in MainActivity )
+
 7. Star My Final Commits
